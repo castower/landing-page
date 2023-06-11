@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
@@ -11,15 +12,23 @@ body {
 
 ul {
     list-style-type: none;
-    justify-content: flex-end;
+    justify-content: right;
     gap: 20px;
     align-items: start;
-    /* justify-content: space-between; */
-    /* margin-right: 50px; */
 }
 
 ul.navigation {
     margin-top: 0px;
+    padding-left: 100px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    flex: 1;
 }
 
 a, .subtext {
@@ -42,7 +51,6 @@ button {
 }
 
 button:hover {
-    /* background-color: #4CAF50; Green */
     background-color: rgb(178, 132, 190, .5);
     color: white;
   }
@@ -70,14 +78,17 @@ img {
 .intro {
     display:flex;
     padding: 75px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .header {
+    display: inline-flex;
+    flex-wrap: wrap;
     padding: 0px 100px;
     padding-top: 16px;
-    justify-content: space-evenly;
+    padding-right: 120px;
+    justify-content: space-between;
     gap: 100px;
 
 }
@@ -113,8 +124,6 @@ img {
 
 .navigation {
     flex: 1;
-    /* padding-top: 0px; */
-    /* padding: 0px 100px; */
 }
 
 .main_header {
@@ -132,6 +141,16 @@ img {
 
 .images {
     text-align: center;
+    justify-content: space-between;
+}
+
+.facts {
+    display: flex;
+    color: #1F2937;
+    text-align: center;
+    justify-content: right;
+    margin-top: 100px;
+    font-family: 'Great Vibes', cursive;
 }
 
 
@@ -139,20 +158,18 @@ img {
     flex:50%;
   }
  
+.abc_news:hover{
+    color:#B284BE;
+}
 
-  /*
-.pic_text {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-*/
+a:hover {
+    color:#B284BE;
+}
+
+.cursive {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+}
 
 .pic_text {
     display: flex;
@@ -227,6 +244,7 @@ img {
 .logo {
     font-size: 24px;
     margin: 16px;
+    margin-left: 0px;
 }
 
 .icon {
